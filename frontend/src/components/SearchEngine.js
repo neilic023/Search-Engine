@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './Search.css'
+import './SearchEngine.css'
 
 import api from '../axios'
 
@@ -25,6 +25,9 @@ const Search = () => {
     }
 
 
+    useEffect(() => {
+        fetchData();
+      }, [])
 
     return (
         <div>
