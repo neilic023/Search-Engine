@@ -7,19 +7,12 @@ const router = express.Router();
 
 
 //endpoint for filtering data in query string using key value pairs in for in loop
-
-
 router.use('/', async (req, res) => {
     const filters = req.query;
-    const filterData = data.filter(title => {
-        let isValid = true;
-        for (key in filters) {
-            // console.log(title[key], filters[key]);
-            isValid = isValid && title[key] === filters[key]
-        }
-        return isValid;
+    console.log(filters);
+    const filterData = data.filter(element => {
+        return filters.title.toLowerCase() === element.title.toLocaleLowerCase();
     })
-    console.log(filterData);
     res.json(filterData);
 });
 
