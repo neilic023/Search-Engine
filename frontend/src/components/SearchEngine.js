@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./SearchEngine.css";
 import api from "../axios";
 
 const Search = () => {
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
-
   //fetching all the results from the backend
   const fetchData = async () => {
     try {
       if (search === "") {
-        console.log(results);
         return;
       } else {
         const response = await api.get(`/?title=${search}`);
@@ -54,7 +53,9 @@ const Search = () => {
               <>
                 <img className="thumbnail-photo" src={result.photo} alt="new" />
                 <div className="search-result">
-                  <h3>{result.title}</h3>
+                  <NavLink to={`/${result.id}`}>
+                    <h3>{result.title}</h3>
+                  </NavLink>
                   <p>{result.shortDescription}</p>
                 </div>
               </>

@@ -100,7 +100,7 @@ const data = [
   },
   {
     id: "11",
-    title: "Voyager 1",
+    title: "Voyager",
     photo: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Voyager.jpg",
     description:
       "This is a long description, this is a long description, this is a long description, this is a long description, this is a long description this is a long description, this is a long description",
@@ -109,9 +109,9 @@ const data = [
   },
   {
     id: "12",
-    title: "Voyager 2",
+    title: "Rover",
     photo:
-      "https://voyager.jpl.nasa.gov/assets/images/news/Voyager-BytheNumbers-640.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f3/Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg",
     description:
       "This is a long description, this is a long description, this is a long description, this is a long description, this is a long description this is a long description, this is a long description",
     shortDescription:

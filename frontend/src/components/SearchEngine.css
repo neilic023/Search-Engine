@@ -103,3 +103,8 @@ h1 {
   padding: 16px;
   width: 20%;
 }
+
+.full-size {
+  width: 100%;
+  height: auto;
+}
