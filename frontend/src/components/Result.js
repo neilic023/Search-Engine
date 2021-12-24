@@ -9,6 +9,7 @@ const Result = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  //fetching the single result by id
   const fetchResult = async () => {
     try {
       const response = await api.get(`/${id}`);
@@ -19,6 +20,7 @@ const Result = () => {
     }
   };
 
+  //button handler using react router for navigation
   const buttonBackHandler = () => {
     navigate("/");
   };
