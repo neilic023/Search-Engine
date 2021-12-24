@@ -28,7 +28,7 @@ const Search = () => {
     fetchData();
   };
 
-  // hook that will run on mount and trigger fetch on change
+  // hook that will run on mount and trigger fetch on search change
   useEffect(() => {
     fetchData();
   }, [search]);
@@ -63,7 +63,7 @@ const Search = () => {
         )}
         {results.length === 0 && (
           <div className="result">
-            <p className="nothing">Nothing to display</p>
+            <p>Nothing to display</p>
           </div>
         )}
       </div>

@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import SearchEngine from "./components/SearchEngine";
 
-import SearchEngine from './components/SearchEngine'
-
-import './App.css';
-
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <SearchEngine/>
-    </div>
+    <Router>
+      <div className="App">
+        <Route exact path="/" component={SearchEngine} />
+      </div>
+    </Router>
   );
 }
 
