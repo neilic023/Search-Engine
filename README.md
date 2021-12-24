@@ -2,7 +2,7 @@
 
 little solar system planets and space robots search engine written using express.js on backend and react.js on frontend
 
-#App Usage
+# App Usage
 
 installing dependencies
 
